@@ -1,0 +1,3 @@
+verilog work "timing_generator.v"
+verilog work "Instruction_decoder.v"
+verilog work "Controller.v"

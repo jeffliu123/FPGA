@@ -1,0 +1,6 @@
+verilog isim_temp "Three_to_8_decoder.v"
+verilog isim_temp "sixteen_bit_dff.v"
+verilog isim_temp "sixteen_bit_8_to_1_MUX.v"
+verilog isim_temp "register_file.v"
+verilog isim_temp "register_file_tb.v"
+verilog isim_temp "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

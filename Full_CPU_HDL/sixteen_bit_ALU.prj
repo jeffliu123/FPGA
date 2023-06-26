@@ -1,0 +1,2 @@
+verilog work "full_adder.v"
+verilog work "sixteen_bit_ALU.v"

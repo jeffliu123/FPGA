@@ -1,0 +1,342 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 3 -n
+3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf
+
+Design file:              CPU.ncd
+Physical constraint file: CPU.pcf
+Device,package,speed:     xc6slx4,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+ext_addr<0> |    2.224(R)|      SLOW  |    0.337(R)|      FAST  |mem_clk           |   0.000|
+ext_addr<1> |    2.629(R)|      SLOW  |    0.422(R)|      FAST  |mem_clk           |   0.000|
+ext_addr<2> |    2.645(R)|      SLOW  |    0.668(R)|      SLOW  |mem_clk           |   0.000|
+ext_addr<3> |    2.410(R)|      SLOW  |    0.739(R)|      SLOW  |mem_clk           |   0.000|
+ext_addr<4> |    3.066(R)|      SLOW  |    0.835(R)|      SLOW  |mem_clk           |   0.000|
+ext_addr<5> |    1.971(R)|      SLOW  |    0.887(R)|      SLOW  |mem_clk           |   0.000|
+ext_addr<6> |    3.004(R)|      SLOW  |    0.446(R)|      SLOW  |mem_clk           |   0.000|
+ext_addr<7> |    2.610(R)|      SLOW  |    0.781(R)|      SLOW  |mem_clk           |   0.000|
+ext_data<0> |    1.984(R)|      SLOW  |   -0.322(R)|      FAST  |mem_clk           |   0.000|
+ext_data<1> |    1.924(R)|      SLOW  |   -0.196(R)|      FAST  |mem_clk           |   0.000|
+ext_data<2> |    1.181(R)|      SLOW  |    0.261(R)|      FAST  |mem_clk           |   0.000|
+ext_data<3> |    1.822(R)|      SLOW  |   -0.201(R)|      FAST  |mem_clk           |   0.000|
+ext_data<4> |    0.506(R)|      SLOW  |    0.902(R)|      SLOW  |mem_clk           |   0.000|
+ext_data<5> |    0.676(R)|      SLOW  |    0.656(R)|      SLOW  |mem_clk           |   0.000|
+ext_data<6> |    1.610(R)|      SLOW  |    0.059(R)|      FAST  |mem_clk           |   0.000|
+ext_data<7> |    1.709(R)|      SLOW  |   -0.169(R)|      FAST  |mem_clk           |   0.000|
+ext_data<8> |    1.264(R)|      SLOW  |    0.226(R)|      FAST  |mem_clk           |   0.000|
+ext_data<9> |    1.164(R)|      SLOW  |    0.361(R)|      FAST  |mem_clk           |   0.000|
+ext_data<10>|    1.771(R)|      SLOW  |   -0.137(R)|      FAST  |mem_clk           |   0.000|
+ext_data<11>|    1.911(R)|      SLOW  |   -0.171(R)|      FAST  |mem_clk           |   0.000|
+ext_data<12>|    2.501(R)|      SLOW  |   -0.650(R)|      FAST  |mem_clk           |   0.000|
+ext_data<13>|    2.110(R)|      SLOW  |   -0.330(R)|      FAST  |mem_clk           |   0.000|
+ext_data<14>|    1.761(R)|      SLOW  |   -0.151(R)|      FAST  |mem_clk           |   0.000|
+ext_data<15>|    1.636(R)|      SLOW  |   -0.066(R)|      FAST  |mem_clk           |   0.000|
+rst_n       |    4.256(R)|      SLOW  |   -2.226(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+test_normal |    3.170(R)|      SLOW  |   -1.628(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock ext_wen
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+ext_addr<0> |    0.825(R)|      SLOW  |    1.810(R)|      SLOW  |mem_clk           |   0.000|
+ext_addr<1> |    1.230(R)|      SLOW  |    1.786(R)|      SLOW  |mem_clk           |   0.000|
+ext_addr<2> |    1.246(R)|      SLOW  |    2.155(R)|      SLOW  |mem_clk           |   0.000|
+ext_addr<3> |    1.011(R)|      SLOW  |    2.226(R)|      SLOW  |mem_clk           |   0.000|
+ext_addr<4> |    1.667(R)|      SLOW  |    2.322(R)|      SLOW  |mem_clk           |   0.000|
+ext_addr<5> |    0.572(R)|      SLOW  |    2.374(R)|      SLOW  |mem_clk           |   0.000|
+ext_addr<6> |    1.605(R)|      SLOW  |    1.933(R)|      SLOW  |mem_clk           |   0.000|
+ext_addr<7> |    1.211(R)|      SLOW  |    2.268(R)|      SLOW  |mem_clk           |   0.000|
+ext_data<0> |    0.585(R)|      SLOW  |    0.872(R)|      SLOW  |mem_clk           |   0.000|
+ext_data<1> |    0.525(R)|      SLOW  |    0.954(R)|      SLOW  |mem_clk           |   0.000|
+ext_data<2> |   -0.218(R)|      SLOW  |    1.689(R)|      SLOW  |mem_clk           |   0.000|
+ext_data<3> |    0.423(R)|      SLOW  |    1.068(R)|      SLOW  |mem_clk           |   0.000|
+ext_data<4> |   -0.773(R)|      FAST  |    2.389(R)|      SLOW  |mem_clk           |   0.000|
+ext_data<5> |   -0.552(R)|      FAST  |    2.143(R)|      SLOW  |mem_clk           |   0.000|
+ext_data<6> |    0.211(R)|      SLOW  |    1.224(R)|      SLOW  |mem_clk           |   0.000|
+ext_data<7> |    0.310(R)|      SLOW  |    1.137(R)|      SLOW  |mem_clk           |   0.000|
+ext_data<8> |   -0.135(R)|      SLOW  |    1.642(R)|      SLOW  |mem_clk           |   0.000|
+ext_data<9> |   -0.235(R)|      SLOW  |    1.697(R)|      SLOW  |mem_clk           |   0.000|
+ext_data<10>|    0.372(R)|      SLOW  |    1.051(R)|      SLOW  |mem_clk           |   0.000|
+ext_data<11>|    0.512(R)|      SLOW  |    1.007(R)|      SLOW  |mem_clk           |   0.000|
+ext_data<12>|    1.102(R)|      SLOW  |    0.353(R)|      SLOW  |mem_clk           |   0.000|
+ext_data<13>|    0.711(R)|      SLOW  |    0.830(R)|      SLOW  |mem_clk           |   0.000|
+ext_data<14>|    0.362(R)|      SLOW  |    1.152(R)|      SLOW  |mem_clk           |   0.000|
+ext_data<15>|    0.237(R)|      SLOW  |    1.237(R)|      SLOW  |mem_clk           |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock clk to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+mem_out<0>  |        13.344(R)|      SLOW  |         6.808(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+            |        11.724(R)|      SLOW  |         6.933(R)|      FAST  |mem_clk           |   0.000|
+mem_out<1>  |        13.411(R)|      SLOW  |         6.718(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+            |        11.990(R)|      SLOW  |         7.125(R)|      FAST  |mem_clk           |   0.000|
+mem_out<2>  |        13.169(R)|      SLOW  |         6.499(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+            |        12.142(R)|      SLOW  |         7.226(R)|      FAST  |mem_clk           |   0.000|
+mem_out<3>  |        13.357(R)|      SLOW  |         6.776(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+            |        11.865(R)|      SLOW  |         7.011(R)|      FAST  |mem_clk           |   0.000|
+mem_out<4>  |        13.588(R)|      SLOW  |         6.731(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+            |        12.785(R)|      SLOW  |         7.608(R)|      FAST  |mem_clk           |   0.000|
+mem_out<5>  |        13.410(R)|      SLOW  |         6.866(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+            |        11.752(R)|      SLOW  |         6.905(R)|      FAST  |mem_clk           |   0.000|
+mem_out<6>  |        13.303(R)|      SLOW  |         6.462(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+            |        11.480(R)|      SLOW  |         6.784(R)|      FAST  |mem_clk           |   0.000|
+mem_out<7>  |        14.067(R)|      SLOW  |         7.477(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+            |        12.515(R)|      SLOW  |         7.385(R)|      FAST  |mem_clk           |   0.000|
+mem_out<8>  |        14.264(R)|      SLOW  |         7.260(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+            |        13.206(R)|      SLOW  |         7.845(R)|      FAST  |mem_clk           |   0.000|
+mem_out<9>  |        14.374(R)|      SLOW  |         7.422(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+            |        12.506(R)|      SLOW  |         7.473(R)|      FAST  |mem_clk           |   0.000|
+mem_out<10> |        14.432(R)|      SLOW  |         7.433(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+            |        11.742(R)|      SLOW  |         6.897(R)|      FAST  |mem_clk           |   0.000|
+mem_out<11> |        15.475(R)|      SLOW  |         7.922(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+            |        13.667(R)|      SLOW  |         8.205(R)|      FAST  |mem_clk           |   0.000|
+mem_out<12> |        14.120(R)|      SLOW  |         7.374(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+            |        11.526(R)|      SLOW  |         6.738(R)|      FAST  |mem_clk           |   0.000|
+mem_out<13> |        14.739(R)|      SLOW  |         7.829(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+            |        13.541(R)|      SLOW  |         8.188(R)|      FAST  |mem_clk           |   0.000|
+mem_out<14> |        15.526(R)|      SLOW  |         8.099(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+            |        13.769(R)|      SLOW  |         8.274(R)|      FAST  |mem_clk           |   0.000|
+mem_out<15> |        14.024(R)|      SLOW  |         7.206(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+            |        12.795(R)|      SLOW  |         7.746(R)|      FAST  |mem_clk           |   0.000|
+pc_en       |         8.647(R)|      SLOW  |         4.627(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+tb_step<0>  |         8.412(R)|      SLOW  |         4.556(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+tb_step<1>  |         9.150(R)|      SLOW  |         5.055(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock ext_wen to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+mem_out<0>  |        13.211(R)|      SLOW  |         7.807(R)|      FAST  |mem_clk           |   0.000|
+mem_out<1>  |        13.477(R)|      SLOW  |         7.999(R)|      FAST  |mem_clk           |   0.000|
+mem_out<2>  |        13.629(R)|      SLOW  |         8.100(R)|      FAST  |mem_clk           |   0.000|
+mem_out<3>  |        13.352(R)|      SLOW  |         7.885(R)|      FAST  |mem_clk           |   0.000|
+mem_out<4>  |        14.272(R)|      SLOW  |         8.482(R)|      FAST  |mem_clk           |   0.000|
+mem_out<5>  |        13.239(R)|      SLOW  |         7.779(R)|      FAST  |mem_clk           |   0.000|
+mem_out<6>  |        12.967(R)|      SLOW  |         7.658(R)|      FAST  |mem_clk           |   0.000|
+mem_out<7>  |        14.002(R)|      SLOW  |         8.259(R)|      FAST  |mem_clk           |   0.000|
+mem_out<8>  |        14.693(R)|      SLOW  |         8.719(R)|      FAST  |mem_clk           |   0.000|
+mem_out<9>  |        13.993(R)|      SLOW  |         8.347(R)|      FAST  |mem_clk           |   0.000|
+mem_out<10> |        13.229(R)|      SLOW  |         7.771(R)|      FAST  |mem_clk           |   0.000|
+mem_out<11> |        15.154(R)|      SLOW  |         9.079(R)|      FAST  |mem_clk           |   0.000|
+mem_out<12> |        13.013(R)|      SLOW  |         7.612(R)|      FAST  |mem_clk           |   0.000|
+mem_out<13> |        15.028(R)|      SLOW  |         9.062(R)|      FAST  |mem_clk           |   0.000|
+mem_out<14> |        15.256(R)|      SLOW  |         9.148(R)|      FAST  |mem_clk           |   0.000|
+mem_out<15> |        14.282(R)|      SLOW  |         8.620(R)|      FAST  |mem_clk           |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    1.999|         |         |         |
+ext_wen        |    4.906|    4.906|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock ext_wen
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    1.125|         |         |         |
+ext_wen        |    3.507|    3.507|         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+ext_addr<0>    |mem_out<0>     |   12.299|
+ext_addr<0>    |mem_out<1>     |   12.462|
+ext_addr<0>    |mem_out<2>     |   11.878|
+ext_addr<0>    |mem_out<3>     |   12.161|
+ext_addr<0>    |mem_out<4>     |   12.951|
+ext_addr<0>    |mem_out<5>     |   12.276|
+ext_addr<0>    |mem_out<6>     |   11.861|
+ext_addr<0>    |mem_out<7>     |   13.287|
+ext_addr<0>    |mem_out<8>     |   13.368|
+ext_addr<0>    |mem_out<9>     |   13.150|
+ext_addr<0>    |mem_out<10>    |   13.278|
+ext_addr<0>    |mem_out<11>    |   14.838|
+ext_addr<0>    |mem_out<12>    |   13.044|
+ext_addr<0>    |mem_out<13>    |   13.907|
+ext_addr<0>    |mem_out<14>    |   14.342|
+ext_addr<0>    |mem_out<15>    |   12.899|
+ext_addr<1>    |mem_out<0>     |   12.525|
+ext_addr<1>    |mem_out<1>     |   12.689|
+ext_addr<1>    |mem_out<2>     |   12.242|
+ext_addr<1>    |mem_out<3>     |   12.008|
+ext_addr<1>    |mem_out<4>     |   12.548|
+ext_addr<1>    |mem_out<5>     |   12.597|
+ext_addr<1>    |mem_out<6>     |   12.173|
+ext_addr<1>    |mem_out<7>     |   13.181|
+ext_addr<1>    |mem_out<8>     |   13.150|
+ext_addr<1>    |mem_out<9>     |   13.405|
+ext_addr<1>    |mem_out<10>    |   13.606|
+ext_addr<1>    |mem_out<11>    |   13.980|
+ext_addr<1>    |mem_out<12>    |   12.921|
+ext_addr<1>    |mem_out<13>    |   13.687|
+ext_addr<1>    |mem_out<14>    |   14.482|
+ext_addr<1>    |mem_out<15>    |   13.128|
+ext_addr<2>    |mem_out<0>     |   12.369|
+ext_addr<2>    |mem_out<1>     |   12.429|
+ext_addr<2>    |mem_out<2>     |   11.660|
+ext_addr<2>    |mem_out<3>     |   12.593|
+ext_addr<2>    |mem_out<4>     |   12.272|
+ext_addr<2>    |mem_out<5>     |   12.462|
+ext_addr<2>    |mem_out<6>     |   11.969|
+ext_addr<2>    |mem_out<7>     |   13.155|
+ext_addr<2>    |mem_out<8>     |   13.126|
+ext_addr<2>    |mem_out<9>     |   13.102|
+ext_addr<2>    |mem_out<10>    |   13.445|
+ext_addr<2>    |mem_out<11>    |   13.986|
+ext_addr<2>    |mem_out<12>    |   12.965|
+ext_addr<2>    |mem_out<13>    |   13.660|
+ext_addr<2>    |mem_out<14>    |   14.784|
+ext_addr<2>    |mem_out<15>    |   13.029|
+ext_addr<3>    |mem_out<0>     |   12.289|
+ext_addr<3>    |mem_out<1>     |   12.092|
+ext_addr<3>    |mem_out<2>     |   11.567|
+ext_addr<3>    |mem_out<3>     |   11.878|
+ext_addr<3>    |mem_out<4>     |   12.171|
+ext_addr<3>    |mem_out<5>     |   12.407|
+ext_addr<3>    |mem_out<6>     |   11.680|
+ext_addr<3>    |mem_out<7>     |   12.944|
+ext_addr<3>    |mem_out<8>     |   13.261|
+ext_addr<3>    |mem_out<9>     |   12.937|
+ext_addr<3>    |mem_out<10>    |   13.251|
+ext_addr<3>    |mem_out<11>    |   13.814|
+ext_addr<3>    |mem_out<12>    |   13.117|
+ext_addr<3>    |mem_out<13>    |   13.736|
+ext_addr<3>    |mem_out<14>    |   14.018|
+ext_addr<3>    |mem_out<15>    |   12.934|
+ext_addr<4>    |mem_out<0>     |   12.682|
+ext_addr<4>    |mem_out<1>     |   12.414|
+ext_addr<4>    |mem_out<2>     |   12.069|
+ext_addr<4>    |mem_out<3>     |   12.695|
+ext_addr<4>    |mem_out<4>     |   12.112|
+ext_addr<4>    |mem_out<5>     |   12.594|
+ext_addr<4>    |mem_out<6>     |   12.275|
+ext_addr<4>    |mem_out<7>     |   13.390|
+ext_addr<4>    |mem_out<8>     |   12.957|
+ext_addr<4>    |mem_out<9>     |   13.437|
+ext_addr<4>    |mem_out<10>    |   13.770|
+ext_addr<4>    |mem_out<11>    |   13.734|
+ext_addr<4>    |mem_out<12>    |   13.230|
+ext_addr<4>    |mem_out<13>    |   13.433|
+ext_addr<4>    |mem_out<14>    |   14.642|
+ext_addr<4>    |mem_out<15>    |   12.931|
+ext_addr<5>    |mem_out<0>     |   11.968|
+ext_addr<5>    |mem_out<1>     |   11.881|
+ext_addr<5>    |mem_out<2>     |   11.466|
+ext_addr<5>    |mem_out<3>     |   11.454|
+ext_addr<5>    |mem_out<4>     |   11.751|
+ext_addr<5>    |mem_out<5>     |   11.977|
+ext_addr<5>    |mem_out<6>     |   11.812|
+ext_addr<5>    |mem_out<7>     |   12.978|
+ext_addr<5>    |mem_out<8>     |   13.064|
+ext_addr<5>    |mem_out<9>     |   12.470|
+ext_addr<5>    |mem_out<10>    |   12.525|
+ext_addr<5>    |mem_out<11>    |   13.897|
+ext_addr<5>    |mem_out<12>    |   12.322|
+ext_addr<5>    |mem_out<13>    |   13.477|
+ext_addr<5>    |mem_out<14>    |   14.162|
+ext_addr<5>    |mem_out<15>    |   12.458|
+ext_addr<6>    |mem_out<0>     |   12.348|
+ext_addr<6>    |mem_out<1>     |   12.308|
+ext_addr<6>    |mem_out<2>     |   12.251|
+ext_addr<6>    |mem_out<3>     |   12.101|
+ext_addr<6>    |mem_out<4>     |   11.979|
+ext_addr<6>    |mem_out<5>     |   12.461|
+ext_addr<6>    |mem_out<6>     |   12.385|
+ext_addr<6>    |mem_out<7>     |   13.149|
+ext_addr<6>    |mem_out<8>     |   12.844|
+ext_addr<6>    |mem_out<9>     |   13.456|
+ext_addr<6>    |mem_out<10>    |   13.370|
+ext_addr<6>    |mem_out<11>    |   14.005|
+ext_addr<6>    |mem_out<12>    |   12.969|
+ext_addr<6>    |mem_out<13>    |   13.553|
+ext_addr<6>    |mem_out<14>    |   14.608|
+ext_addr<6>    |mem_out<15>    |   13.106|
+ext_addr<7>    |mem_out<0>     |   12.036|
+ext_addr<7>    |mem_out<1>     |   12.255|
+ext_addr<7>    |mem_out<2>     |   11.366|
+ext_addr<7>    |mem_out<3>     |   11.592|
+ext_addr<7>    |mem_out<4>     |   11.603|
+ext_addr<7>    |mem_out<5>     |   11.994|
+ext_addr<7>    |mem_out<6>     |   11.528|
+ext_addr<7>    |mem_out<7>     |   12.755|
+ext_addr<7>    |mem_out<8>     |   12.457|
+ext_addr<7>    |mem_out<9>     |   12.902|
+ext_addr<7>    |mem_out<10>    |   12.989|
+ext_addr<7>    |mem_out<11>    |   13.305|
+ext_addr<7>    |mem_out<12>    |   12.799|
+ext_addr<7>    |mem_out<13>    |   13.245|
+ext_addr<7>    |mem_out<14>    |   14.014|
+ext_addr<7>    |mem_out<15>    |   12.014|
+ext_wen        |mem_out<0>     |   14.522|
+ext_wen        |mem_out<1>     |   14.647|
+ext_wen        |mem_out<2>     |   14.200|
+ext_wen        |mem_out<3>     |   14.535|
+ext_wen        |mem_out<4>     |   14.506|
+ext_wen        |mem_out<5>     |   14.555|
+ext_wen        |mem_out<6>     |   14.131|
+ext_wen        |mem_out<7>     |   15.230|
+ext_wen        |mem_out<8>     |   15.178|
+ext_wen        |mem_out<9>     |   15.363|
+ext_wen        |mem_out<10>    |   15.610|
+ext_wen        |mem_out<11>    |   16.325|
+ext_wen        |mem_out<12>    |   15.070|
+ext_wen        |mem_out<13>    |   15.653|
+ext_wen        |mem_out<14>    |   16.482|
+ext_wen        |mem_out<15>    |   15.086|
+---------------+---------------+---------+
+
+
+Analysis completed Fri Oct 21 02:20:08 2022 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 385 MB
+
+
+

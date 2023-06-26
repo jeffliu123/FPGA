@@ -1,0 +1,42 @@
+xst -intstyle ise -ifn "/home/ise/Full_CPU_HDL/sixteen_bit_8_to_1_MUX.xst" -ofn "/home/ise/Full_CPU_HDL/sixteen_bit_8_to_1_MUX.syr" 
+xst -intstyle ise -ifn "/home/ise/Full_CPU_HDL/sixteen_bit_8_to_1_MUX.xst" -ofn "/home/ise/Full_CPU_HDL/sixteen_bit_8_to_1_MUX.syr" 
+xst -intstyle ise -ifn "/home/ise/Full_CPU_HDL/sixteen_bit_8_to_1_MUX.xst" -ofn "/home/ise/Full_CPU_HDL/sixteen_bit_8_to_1_MUX.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 sixteen_bit_8_to_1_MUX.ngc sixteen_bit_8_to_1_MUX.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sixteen_bit_8_to_1_MUX_map.ncd sixteen_bit_8_to_1_MUX.ngd sixteen_bit_8_to_1_MUX.pcf 
+xst -intstyle ise -ifn "/home/ise/Full_CPU_HDL/sixteen_bit_8_to_1_MUX.xst" -ofn "/home/ise/Full_CPU_HDL/sixteen_bit_8_to_1_MUX.syr" 
+xst -intstyle ise -ifn "/home/ise/Full_CPU_HDL/sixteen_bit_8_to_1_MUX.xst" -ofn "/home/ise/Full_CPU_HDL/sixteen_bit_8_to_1_MUX.syr" 
+xst -intstyle ise -ifn "/home/ise/Full_CPU_HDL/sixteen_bit_8_to_1_MUX.xst" -ofn "/home/ise/Full_CPU_HDL/sixteen_bit_8_to_1_MUX.syr" 
+xst -intstyle ise -ifn "/home/ise/Full_CPU_HDL/sixteen_bit_8_to_1_MUX.xst" -ofn "/home/ise/Full_CPU_HDL/sixteen_bit_8_to_1_MUX.syr" 
+xst -intstyle ise -ifn "/home/ise/Full_CPU_HDL/sixteen_bit_8_to_1_MUX.xst" -ofn "/home/ise/Full_CPU_HDL/sixteen_bit_8_to_1_MUX.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 sixteen_bit_8_to_1_MUX.ngc sixteen_bit_8_to_1_MUX.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sixteen_bit_8_to_1_MUX_map.ncd sixteen_bit_8_to_1_MUX.ngd sixteen_bit_8_to_1_MUX.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 sixteen_bit_8_to_1_MUX.ngc sixteen_bit_8_to_1_MUX.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sixteen_bit_8_to_1_MUX_map.ncd sixteen_bit_8_to_1_MUX.ngd sixteen_bit_8_to_1_MUX.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 sixteen_bit_8_to_1_MUX.ngc sixteen_bit_8_to_1_MUX.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sixteen_bit_8_to_1_MUX_map.ncd sixteen_bit_8_to_1_MUX.ngd sixteen_bit_8_to_1_MUX.pcf 
+xst -intstyle ise -ifn "/home/ise/Full_CPU_HDL/sixteen_bit_8_to_1_MUX.xst" -ofn "/home/ise/Full_CPU_HDL/sixteen_bit_8_to_1_MUX.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 sixteen_bit_8_to_1_MUX.ngc sixteen_bit_8_to_1_MUX.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sixteen_bit_8_to_1_MUX_map.ncd sixteen_bit_8_to_1_MUX.ngd sixteen_bit_8_to_1_MUX.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 sixteen_bit_8_to_1_MUX.ngc sixteen_bit_8_to_1_MUX.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sixteen_bit_8_to_1_MUX_map.ncd sixteen_bit_8_to_1_MUX.ngd sixteen_bit_8_to_1_MUX.pcf 
+xst -intstyle ise -ifn "/home/ise/Full_CPU_HDL/sixteen_bit_8_to_1_MUX.xst" -ofn "/home/ise/Full_CPU_HDL/sixteen_bit_8_to_1_MUX.syr" 
+xst -intstyle ise -ifn "/home/ise/Full_CPU_HDL/sixteen_bit_8_to_1_MUX.xst" -ofn "/home/ise/Full_CPU_HDL/sixteen_bit_8_to_1_MUX.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 sixteen_bit_8_to_1_MUX.ngc sixteen_bit_8_to_1_MUX.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sixteen_bit_8_to_1_MUX_map.ncd sixteen_bit_8_to_1_MUX.ngd sixteen_bit_8_to_1_MUX.pcf 
+xst -intstyle ise -ifn "/home/ise/Full_CPU_HDL/sixteen_bit_8_to_1_MUX.xst" -ofn "/home/ise/Full_CPU_HDL/sixteen_bit_8_to_1_MUX.syr" 
+xst -intstyle ise -ifn "/home/ise/Full_CPU_HDL/sixteen_bit_8_to_1_MUX.xst" -ofn "/home/ise/Full_CPU_HDL/sixteen_bit_8_to_1_MUX.syr" 
+xst -intstyle ise -ifn "/home/ise/Full_CPU_HDL/sixteen_bit_8_to_1_MUX.xst" -ofn "/home/ise/Full_CPU_HDL/sixteen_bit_8_to_1_MUX.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 sixteen_bit_8_to_1_MUX.ngc sixteen_bit_8_to_1_MUX.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sixteen_bit_8_to_1_MUX_map.ncd sixteen_bit_8_to_1_MUX.ngd sixteen_bit_8_to_1_MUX.pcf 
+xst -intstyle ise -ifn "/home/ise/Full_CPU_HDL/sixteen_bit_8_to_1_MUX.xst" -ofn "/home/ise/Full_CPU_HDL/sixteen_bit_8_to_1_MUX.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx25t-fgg484-3 sixteen_bit_8_to_1_MUX.ngc sixteen_bit_8_to_1_MUX.ngd  
+map -intstyle ise -p xc6slx25t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sixteen_bit_8_to_1_MUX_map.ncd sixteen_bit_8_to_1_MUX.ngd sixteen_bit_8_to_1_MUX.pcf 
+par -w -intstyle ise -ol high -mt off sixteen_bit_8_to_1_MUX_map.ncd sixteen_bit_8_to_1_MUX.ncd sixteen_bit_8_to_1_MUX.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sixteen_bit_8_to_1_MUX.twx sixteen_bit_8_to_1_MUX.ncd -o sixteen_bit_8_to_1_MUX.twr sixteen_bit_8_to_1_MUX.pcf 
+xst -intstyle ise -ifn "/home/ise/Full_CPU_HDL/sixteen_bit_8_to_1_MUX.xst" -ofn "/home/ise/Full_CPU_HDL/sixteen_bit_8_to_1_MUX.syr" 
+xst -intstyle ise -ifn "/home/ise/Full_CPU_HDL/sixteen_bit_8_to_1_MUX.xst" -ofn "/home/ise/Full_CPU_HDL/sixteen_bit_8_to_1_MUX.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx25t-fgg484-3 sixteen_bit_8_to_1_MUX.ngc sixteen_bit_8_to_1_MUX.ngd  
+map -intstyle ise -p xc6slx25t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sixteen_bit_8_to_1_MUX_map.ncd sixteen_bit_8_to_1_MUX.ngd sixteen_bit_8_to_1_MUX.pcf 
+par -w -intstyle ise -ol high -mt off sixteen_bit_8_to_1_MUX_map.ncd sixteen_bit_8_to_1_MUX.ncd sixteen_bit_8_to_1_MUX.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sixteen_bit_8_to_1_MUX.twx sixteen_bit_8_to_1_MUX.ncd -o sixteen_bit_8_to_1_MUX.twr sixteen_bit_8_to_1_MUX.pcf 
+bitgen -intstyle ise -f sixteen_bit_8_to_1_MUX.ut sixteen_bit_8_to_1_MUX.ncd 

@@ -1,0 +1,154 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 3 -n
+3 -fastpaths -xml Controller.twx Controller.ncd -o Controller.twr
+Controller.pcf
+
+Design file:              Controller.ncd
+Physical constraint file: Controller.pcf
+Device,package,speed:     xc6slx25t,fgg484,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+rst_n       |    2.227(R)|      SLOW  |   -1.065(R)|      FAST  |clk_BUFGP         |   0.000|
+timer_en    |    2.332(R)|      SLOW  |   -1.023(R)|      FAST  |clk_BUFGP         |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock clk to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+clk_s0      |         9.152(R)|      SLOW  |         4.583(R)|      FAST  |clk_BUFGP         |   0.000|
+clk_s1      |         9.318(R)|      SLOW  |         4.761(R)|      FAST  |clk_BUFGP         |   0.000|
+mem_ren     |         8.977(R)|      SLOW  |         4.747(R)|      FAST  |clk_BUFGP         |   0.000|
+mem_wen     |         9.344(R)|      SLOW  |         4.968(R)|      FAST  |clk_BUFGP         |   0.000|
+pc_en       |         8.573(R)|      SLOW  |         4.524(R)|      FAST  |clk_BUFGP         |   0.000|
+step        |         8.048(R)|      SLOW  |         4.207(R)|      FAST  |clk_BUFGP         |   0.000|
+tb_step<0>  |         7.818(R)|      SLOW  |         4.064(R)|      FAST  |clk_BUFGP         |   0.000|
+tb_step<1>  |         8.226(R)|      SLOW  |         4.317(R)|      FAST  |clk_BUFGP         |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    1.256|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+ext_addr<0>    |mem_addr<0>    |    8.870|
+ext_addr<1>    |mem_addr<1>    |    8.595|
+ext_addr<2>    |mem_addr<2>    |    8.586|
+ext_addr<3>    |mem_addr<3>    |    8.729|
+ext_addr<4>    |mem_addr<4>    |    8.763|
+ext_addr<5>    |mem_addr<5>    |    8.828|
+ext_addr<6>    |mem_addr<6>    |    8.682|
+ext_addr<7>    |mem_addr<7>    |    8.657|
+ext_data<0>    |mem_data<0>    |    6.815|
+ext_data<1>    |mem_data<1>    |    7.772|
+ext_data<2>    |mem_data<2>    |    7.224|
+ext_data<3>    |mem_data<3>    |    6.686|
+ext_data<4>    |mem_data<4>    |    7.555|
+ext_data<5>    |mem_data<5>    |    7.231|
+ext_data<6>    |mem_data<6>    |    7.732|
+ext_data<7>    |mem_data<7>    |    7.835|
+ext_data<8>    |mem_data<8>    |    7.699|
+ext_data<9>    |mem_data<9>    |    7.413|
+ext_data<10>   |mem_data<10>   |    7.800|
+ext_data<11>   |mem_data<11>   |    7.548|
+ext_data<12>   |mem_data<12>   |    8.013|
+ext_data<13>   |mem_data<13>   |    7.344|
+ext_data<14>   |mem_data<14>   |    7.769|
+ext_data<15>   |mem_data<15>   |    7.246|
+ext_wen        |mem_addr<0>    |   10.348|
+ext_wen        |mem_addr<1>    |   10.258|
+ext_wen        |mem_addr<2>    |   10.343|
+ext_wen        |mem_addr<3>    |   10.349|
+ext_wen        |mem_addr<4>    |   10.102|
+ext_wen        |mem_addr<5>    |   10.291|
+ext_wen        |mem_addr<6>    |    9.748|
+ext_wen        |mem_addr<7>    |   10.003|
+ext_wen        |mem_data<0>    |   10.123|
+ext_wen        |mem_data<1>    |   11.381|
+ext_wen        |mem_data<2>    |    9.584|
+ext_wen        |mem_data<3>    |    9.648|
+ext_wen        |mem_data<4>    |    9.782|
+ext_wen        |mem_data<5>    |    9.846|
+ext_wen        |mem_data<6>    |   11.021|
+ext_wen        |mem_data<7>    |   10.976|
+ext_wen        |mem_data<8>    |   10.677|
+ext_wen        |mem_data<9>    |   10.618|
+ext_wen        |mem_data<10>   |    9.901|
+ext_wen        |mem_data<11>   |   10.193|
+ext_wen        |mem_data<12>   |   10.589|
+ext_wen        |mem_data<13>   |   10.699|
+ext_wen        |mem_data<14>   |   10.660|
+ext_wen        |mem_data<15>   |   10.512|
+ext_wen        |mem_wen        |    8.588|
+pc_addr<11>    |pc_ext<11>     |    8.291|
+pc_addr<12>    |pc_ext<12>     |    8.941|
+pc_addr<13>    |pc_ext<13>     |    9.107|
+pc_addr<14>    |pc_ext<14>     |    9.193|
+pc_addr<15>    |pc_ext<15>     |   11.107|
+rf_B<0>        |mem_data<0>    |    7.154|
+rf_B<1>        |mem_data<1>    |    7.951|
+rf_B<2>        |mem_data<2>    |    6.684|
+rf_B<3>        |mem_data<3>    |    6.556|
+rf_B<4>        |mem_data<4>    |    6.504|
+rf_B<5>        |mem_data<5>    |    6.644|
+rf_B<6>        |mem_data<6>    |    7.434|
+rf_B<7>        |mem_data<7>    |    7.133|
+rf_B<8>        |mem_data<8>    |    7.381|
+rf_B<9>        |mem_data<9>    |    7.400|
+rf_B<10>       |mem_data<10>   |    6.761|
+rf_B<11>       |mem_data<11>   |    6.645|
+rf_B<12>       |mem_data<12>   |    6.976|
+rf_B<13>       |mem_data<13>   |    7.235|
+rf_B<14>       |mem_data<14>   |    7.278|
+rf_B<15>       |mem_data<15>   |    6.699|
+---------------+---------------+---------+
+
+
+Analysis completed Fri Oct 21 11:17:19 2022 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 412 MB
+
+
+

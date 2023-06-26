@@ -1,0 +1,2 @@
+verilog work "netgen/par/Instruction_decoder_timesim.v"
+verilog work "instruction_decoder_tb.v"

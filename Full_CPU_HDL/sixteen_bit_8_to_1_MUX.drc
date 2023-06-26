@@ -1,0 +1,8 @@
+Release 14.7 Drc P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Fri Oct 21 07:56:48 2022
+
+drc -z sixteen_bit_8_to_1_MUX.ncd sixteen_bit_8_to_1_MUX.pcf
+
+DRC detected 0 errors and 0 warnings.

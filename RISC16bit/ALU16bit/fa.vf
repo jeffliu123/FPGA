@@ -1,0 +1,54 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : fa.vf
+// /___/   /\     Timestamp : 10/06/2022 01:47:46
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family virtex6 -verilog C:/Users/user/Desktop/16bitALU/ALU16bit/fa.vf -w C:/Users/user/Desktop/16bitALU/ALU16bit/fa.sch
+//Design Name: fa
+//Device: virtex6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module fa(A, 
+          B, 
+          CI, 
+          CO, 
+          S);
+
+    input A;
+    input B;
+    input CI;
+   output CO;
+   output S;
+   
+   wire XLXN_3;
+   wire XLXN_6;
+   wire XLXN_7;
+   
+   AND2  XLXI_1 (.I0(XLXN_3), 
+                .I1(CI), 
+                .O(XLXN_6));
+   AND2  XLXI_2 (.I0(A), 
+                .I1(B), 
+                .O(XLXN_7));
+   OR2  XLXI_3 (.I0(XLXN_7), 
+               .I1(XLXN_6), 
+               .O(CO));
+   XOR2  XLXI_4 (.I0(B), 
+                .I1(A), 
+                .O(XLXN_3));
+   XOR2  XLXI_5 (.I0(CI), 
+                .I1(XLXN_3), 
+                .O(S));
+endmodule

@@ -1,0 +1,14 @@
+xst -intstyle ise -ifn "/home/ise/Full_CPU_HDL/sixteen_bit_ALU.xst" -ofn "/home/ise/Full_CPU_HDL/sixteen_bit_ALU.syr" 
+xst -intstyle ise -ifn "/home/ise/Full_CPU_HDL/sixteen_bit_ALU.xst" -ofn "/home/ise/Full_CPU_HDL/sixteen_bit_ALU.syr" 
+xst -intstyle ise -ifn "/home/ise/Full_CPU_HDL/sixteen_bit_ALU.xst" -ofn "/home/ise/Full_CPU_HDL/sixteen_bit_ALU.syr" 
+xst -intstyle ise -ifn "/home/ise/Full_CPU_HDL/sixteen_bit_ALU.xst" -ofn "/home/ise/Full_CPU_HDL/sixteen_bit_ALU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 sixteen_bit_ALU.ngc sixteen_bit_ALU.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sixteen_bit_ALU_map.ncd sixteen_bit_ALU.ngd sixteen_bit_ALU.pcf 
+par -w -intstyle ise -ol high -mt off sixteen_bit_ALU_map.ncd sixteen_bit_ALU.ncd sixteen_bit_ALU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sixteen_bit_ALU.twx sixteen_bit_ALU.ncd -o sixteen_bit_ALU.twr sixteen_bit_ALU.pcf 
+xst -intstyle ise -ifn "/home/ise/Full_CPU_HDL/sixteen_bit_ALU.xst" -ofn "/home/ise/Full_CPU_HDL/sixteen_bit_ALU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 sixteen_bit_ALU.ngc sixteen_bit_ALU.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sixteen_bit_ALU_map.ncd sixteen_bit_ALU.ngd sixteen_bit_ALU.pcf 
+par -w -intstyle ise -ol high -mt off sixteen_bit_ALU_map.ncd sixteen_bit_ALU.ncd sixteen_bit_ALU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sixteen_bit_ALU.twx sixteen_bit_ALU.ncd -o sixteen_bit_ALU.twr sixteen_bit_ALU.pcf 
+netgen -intstyle ise -s 3  -pcf sixteen_bit_ALU.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim sixteen_bit_ALU.ncd sixteen_bit_ALU_timesim.v 

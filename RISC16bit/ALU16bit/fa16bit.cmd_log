@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "/home/ise/mid/16bitALU/ALU16bit/fa16bit.xst" -ofn "/home/ise/mid/16bitALU/ALU16bit/fa16bit.syr" 
+sch2sym -intstyle ise -family virtex6 -refsym fa16bit /home/ise/mid/16bitALU/ALU16bit/fa16bit.sch /home/ise/mid/16bitALU/ALU16bit/fa16bit.sym 
+sch2sym -intstyle ise -family virtex6 -refsym fa16bit /home/ise/mid/16bitALU/ALU16bit/fa16bit.sch /home/ise/mid/16bitALU/ALU16bit/fa16bit.sym 
+xst -intstyle ise -ifn "/home/ise/mid/16bitALU/ALU16bit/fa16bit.xst" -ofn "/home/ise/mid/16bitALU/ALU16bit/fa16bit.syr" 
+xst -intstyle ise -ifn "/home/ise/mid/16bitALU/ALU16bit/fa16bit.xst" -ofn "/home/ise/mid/16bitALU/ALU16bit/fa16bit.syr" 
+xst -intstyle ise -ifn "/home/ise/mid/16bitALU/ALU16bit/fa16bit.xst" -ofn "/home/ise/mid/16bitALU/ALU16bit/fa16bit.syr" 
+xst -intstyle ise -ifn "/home/ise/mid/16bitALU/ALU16bit/fa16bit.xst" -ofn "/home/ise/mid/16bitALU/ALU16bit/fa16bit.syr" 
+sch2sym -intstyle ise -family virtex6 -refsym fa16bit /home/ise/mid/16bitALU/ALU16bit/fa16bit.sch /home/ise/mid/16bitALU/ALU16bit/fa16bit.sym 
+sch2sym -intstyle ise -family virtex6 -refsym fa16bit /home/ise/mid/16bitALU/ALU16bit/fa16bit.sch /home/ise/mid/16bitALU/ALU16bit/fa16bit.sym 
+xst -intstyle ise -ifn "/home/ise/mid/16bitALU/ALU16bit/fa16bit.xst" -ofn "/home/ise/mid/16bitALU/ALU16bit/fa16bit.syr" 

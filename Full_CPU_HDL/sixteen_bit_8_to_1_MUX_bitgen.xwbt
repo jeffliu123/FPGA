@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/ise/Full_CPU_HDL/sixteen_bit_8_to_1_MUX.ncd
+OUTFILE=/home/ise/Full_CPU_HDL/sixteen_bit_8_to_1_MUX.bit
+FAMILY=Spartan6
+PART=xc6slx25t-3fgg484
+WORKINGDIR=/home/ise/Full_CPU_HDL
+LICENSE=ISE
+USER_INFO=8416_11442_1478797146_620

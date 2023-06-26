@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/midHW/16bitRF/mux8to1_16bit/mux8to1_16bit/mux8to1_16bit.xst" -ofn "C:/midHW/16bitRF/mux8to1_16bit/mux8to1_16bit/mux8to1_16bit.syr" 
+sch2sym -intstyle ise -family spartan6 -refsym mux8to1_16bit C:/midHW/16bitRF/mux8to1_16bit/mux8to1_16bit.sch C:/midHW/16bitRF/mux8to1_16bit/mux8to1_16bit/mux8to1_16bit.sym 

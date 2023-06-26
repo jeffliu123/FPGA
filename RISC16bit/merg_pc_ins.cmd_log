@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -refsym merg_pc_ins /home/ise/FPGA/merg_pc_ins.sch /home/ise/Desktop/RISC16bit/RISC16bit/merg_pc_ins.sym 

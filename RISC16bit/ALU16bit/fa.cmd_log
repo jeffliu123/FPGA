@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "/home/ise/mid/16bitALU/ALU16bit/fa.xst" -ofn "/home/ise/mid/16bitALU/ALU16bit/fa.syr" 
+xst -intstyle ise -ifn "/home/ise/mid/16bitALU/ALU16bit/fa.xst" -ofn "/home/ise/mid/16bitALU/ALU16bit/fa.syr" 
+sch2sym -intstyle ise -family virtex6 -refsym fa /home/ise/mid/16bitALU/ALU16bit/fa.sch /home/ise/mid/16bitALU/ALU16bit/fa.sym 

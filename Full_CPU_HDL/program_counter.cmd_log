@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "/home/ise/Full_CPU_HDL/program_counter.xst" -ofn "/home/ise/Full_CPU_HDL/program_counter.syr" 
+xst -intstyle ise -ifn "/home/ise/Full_CPU_HDL/program_counter.xst" -ofn "/home/ise/Full_CPU_HDL/program_counter.syr" 
+xst -intstyle ise -ifn "/home/ise/Full_CPU_HDL/program_counter.xst" -ofn "/home/ise/Full_CPU_HDL/program_counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 program_counter.ngc program_counter.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o program_counter_map.ncd program_counter.ngd program_counter.pcf 
+par -w -intstyle ise -ol high -mt off program_counter_map.ncd program_counter.ncd program_counter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml program_counter.twx program_counter.ncd -o program_counter.twr program_counter.pcf 
+netgen -intstyle ise -s 3  -pcf program_counter.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim program_counter.ncd program_counter_timesim.v 

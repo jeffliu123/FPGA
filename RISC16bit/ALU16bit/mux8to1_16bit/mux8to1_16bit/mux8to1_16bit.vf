@@ -1,0 +1,121 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : mux8to1_16bit.vf
+// /___/   /\     Timestamp : 10/03/2022 00:51:02
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/midHW/16bitRF/mux8to1_16bit/mux8to1_16bit/mux8to1_16bit.vf -w C:/midHW/16bitRF/mux8to1_16bit/mux8to1_16bit.sch
+//Design Name: mux8to1_16bit
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale  100 ps / 10 ps
+
+module M2_1_HXILINX_mux8to1_16bit (O, D0, D1, S0);
+    
+
+   output O;
+
+   input  D0;
+   input  D1;
+   input  S0;
+
+   reg O;
+
+   always @ ( D0 or D1 or S0)
+   begin
+      case(S0)
+      1'b0 : O <= D0;
+      1'b1 : O <= D1;
+      endcase
+   end
+    
+endmodule
+`timescale 1ns / 1ps
+
+module mux8to1_16bit(in0, 
+                     in1, 
+                     in2, 
+                     in3, 
+                     in4, 
+                     in5, 
+                     in6, 
+                     in7, 
+                     in8, 
+                     in9, 
+                     in10, 
+                     in11, 
+                     in12, 
+                     in13, 
+                     in14, 
+                     in15, 
+                     s0, 
+                     s1, 
+                     s2, 
+                     s3, 
+                     Y);
+
+    input in0;
+    input in1;
+    input in2;
+    input in3;
+    input in4;
+    input in5;
+    input in6;
+    input in7;
+    input in8;
+    input in9;
+    input in10;
+    input in11;
+    input in12;
+    input in13;
+    input in14;
+    input in15;
+    input s0;
+    input s1;
+    input s2;
+    input s3;
+   output Y;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   
+   mux8to1  XLXI_1 (.in0(in0), 
+                   .in1(in1), 
+                   .in2(in2), 
+                   .in3(in3), 
+                   .in4(in4), 
+                   .in5(in5), 
+                   .in6(in6), 
+                   .in7(in7), 
+                   .s0(s0), 
+                   .s1(s1), 
+                   .s2(s2), 
+                   .Y(XLXN_1));
+   mux8to1  XLXI_2 (.in0(in8), 
+                   .in1(in9), 
+                   .in2(in10), 
+                   .in3(in11), 
+                   .in4(in12), 
+                   .in5(in13), 
+                   .in6(in14), 
+                   .in7(in15), 
+                   .s0(s0), 
+                   .s1(s1), 
+                   .s2(s2), 
+                   .Y(XLXN_2));
+   (* HU_SET = "XLXI_3_0" *) 
+   M2_1_HXILINX_mux8to1_16bit  XLXI_3 (.D0(XLXN_1), 
+                                      .D1(XLXN_2), 
+                                      .S0(s3), 
+                                      .O(Y));
+endmodule

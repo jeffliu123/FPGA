@@ -1,0 +1,7 @@
+sch2sym -intstyle ise -family virtex6 -refsym two_complement_adder /home/ise/mid/16bitALU/ALU16bit/two_complement_adder.sch /home/ise/mid/16bitALU/ALU16bit/two_complement_adder.sym 
+sch2sym -intstyle ise -family virtex6 -refsym two_complement_adder /home/ise/mid/16bitALU/ALU16bit/two_complement_adder.sch /home/ise/mid/16bitALU/ALU16bit/two_complement_adder.sym 
+sch2sym -intstyle ise -family virtex6 -refsym two_complement_adder /home/ise/mid/16bitALU/ALU16bit/two_complement_adder.sch /home/ise/mid/16bitALU/ALU16bit/two_complement_adder.sym 
+sch2sym -intstyle ise -family virtex6 -refsym two_complement_adder /home/ise/mid/16bitALU/ALU16bit/two_complement_adder.sch /home/ise/mid/16bitALU/ALU16bit/two_complement_adder.sym 
+xst -intstyle ise -ifn "C:/Users/user/Desktop/16bitALU/ALU16bit/two_complement_adder.xst" -ofn "C:/Users/user/Desktop/16bitALU/ALU16bit/two_complement_adder.syr" 
+sch2sym -intstyle ise -family virtex6 -refsym two_complement_adder C:/Users/user/Desktop/16bitALU/ALU16bit/two_complement_adder.sch C:/Users/user/Desktop/16bitALU/ALU16bit/two_complement_adder.sym 
+sch2sym -intstyle ise -family virtex6 -refsym two_complement_adder C:/Users/user/Desktop/16bitALU/ALU16bit/two_complement_adder.sch C:/Users/user/Desktop/16bitALU/ALU16bit/two_complement_adder.sym 
